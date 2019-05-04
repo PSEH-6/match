@@ -1,4 +1,4 @@
-package com.crick.demo.dto.service;
+package com.crick.demo.service;
 
 import com.crick.demo.dto.MatchDetailDto;
 

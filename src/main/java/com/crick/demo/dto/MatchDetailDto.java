@@ -14,6 +14,7 @@ public class MatchDetailDto {
 	    public String teamOne;
 	    @SerializedName("Team-2")
 	    public String teamTwo;
+	    public String winningTeam;
 	    
 	    
 	    
@@ -21,11 +22,12 @@ public class MatchDetailDto {
 			super();
 		}
 
-		public MatchDetailDto(String score, String teamOne, String teamTwo) {
+		public MatchDetailDto(String score, String teamOne, String teamTwo, String winningTeam) {
 			super();
 			this.score = score;
 			this.teamOne = teamOne;
 			this.teamTwo = teamTwo;
+			this.winningTeam = winningTeam;
 		}
 		
 		public String getScore() {
@@ -45,6 +47,14 @@ public class MatchDetailDto {
 		}
 		public void setTeamTwo(String teamTwo) {
 			this.teamTwo = teamTwo;
+		}
+
+		public String getWinningTeam() {
+			return winningTeam;
+		}
+
+		public void setWinningTeam(String winningTeam) {
+			this.winningTeam = winningTeam;
 		}
 	    
 	    
